@@ -29,7 +29,7 @@ Additionally, some features specific to RiPP classification rely on legacy softw
 2. In the hmm_dir folder of the repo, press your Pfam-A file (press TIGRFAM too if desired)
     * If you are worried about space, you can edit the PFAM_DIR variable in the general section of the `confs/default.conf` file.
 
-Note: If you are a MacOS user, if you are getting a "urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed..." when running RODEO, please go to your applications folder and go to your Python 3 folder and run the "Install_Certificates.command" to fix this issue.
+Note: If you are a MacOS user, if you are getting a "urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed..." when running SHEPHERD, please go to your applications folder and go to your Python 3 folder and run the "Install_Certificates.command" to fix this issue.
 
 There may be things missing. Please let me know.
 
@@ -46,7 +46,7 @@ I will run through a few examples and explain what they mean.
     * Output will appear in `my_output_rodeo_out`.
 3. SHEPHERD with custom HMMs.
     * SHEPHERD by default requires Pfam-A for HMM scanning. However, some RiPP heuristics make use of TIGRFAM. If you'd like to run TIGRFAM or another custom HMM, then use the `-hmm` or `--custom_hmm` flag with the path to your HMM. Note that you can input a list of HMMs as you will see below.
-    * `python shepherd.py lassos.txt -hmm TIGRFAM.hmm MYFAVHMM.hmm` will use Pfam-A in addition to TIGRFAM and MYFAVHMM. Note that this syntax works only if the hmms are in the top level directory, as these are relative paths to rodeo_main.py.
+    * `python shepherd.py lassos.txt -hmm TIGRFAM.hmm MYFAVHMM.hmm` will use Pfam-A in addition to TIGRFAM and MYFAVHMM. Note that this syntax works only if the hmms are in the top level directory, as these are relative paths to shepherd.py.
 4. Running in parallel
     * If you have a list of accessions and want to run SHEPHERD on them in parallel, use the `-j` or `--num_cores` flag followed by the number of processes you want to spawn. Note that it doesn't make sense to spawn more processes than your computer has CPUs. It also doens't make sense to spawn 4 processes if there are only 3 queries in the input file. What's the 4th process going to do?
     * `python shepherd.py lassos.txt -j 4`
