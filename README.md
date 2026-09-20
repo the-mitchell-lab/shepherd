@@ -31,8 +31,6 @@ Additionally, some features specific to RiPP classification rely on legacy softw
 
 Note: If you are a MacOS user, if you are getting a "urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed..." when running SHEPHERD, please go to your applications folder and go to your Python 3 folder and run the "Install_Certificates.command" to fix this issue.
 
-There may be things missing. Please let me know.
-
 ## General usage
 I will run through a few examples and explain what they mean.
 1. Basic SHEPHERD run. 
