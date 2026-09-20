@@ -135,4 +135,4 @@ HMM_ANNOTATION_IDm [colorm]
 ### More Notes (some redudancy)
 1. Output is currently not verbose (You will not see all debug output). For those of you who would like to see it, uncomment line 16 and comment line 17 in `shepherd.py`
 2. Output is not in order if ran in parallel. Output should still make sense but the accessions might not be in the same order due to parallel processing.
-3. You may need to add an email and API_KEY to the entrez_utils.py file.
+3. You may need to add an email and API_KEY to the config file.
