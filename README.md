@@ -5,6 +5,7 @@ Welcome to SHEPHERD! The explanation below is a brief summary of how to use SHEP
 Lastly, I have one important note. IF YOU WANT TO KILL SHEPHERD/END THE PROCESS, USE Ctrl+C! Do not use Ctrl+Z or another combination, as these are not able to be processed properly and could result in [ZOMBIE PROCESSES](https://stackoverflow.com/questions/20688982/zombie-process-vs-orphan-process). 
 
 ## Requirements
+* python (Most recently tested with v3.14)
 * multiprocess
 * scikit-learn
 * gcc_linux-64
