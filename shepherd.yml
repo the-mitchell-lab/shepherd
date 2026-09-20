@@ -1,0 +1,16 @@
+name: shepherd
+channels:
+  - defaults
+dependencies:
+  - python=3.14
+  - multiprocess
+  - scikit-learn
+  - gcc_linux-64
+  - biopython
+  - prodigal
+  - hmmer
+  - networkx
+  - matplotlib
+  - hdbscan
+  - pandas
+prefix: /root/test_anaconda/envs/shepherd
