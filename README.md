@@ -16,7 +16,7 @@ Lastly, I have one important note. IF YOU WANT TO KILL SHEPHERD/END THE PROCESS,
 * hdbscan
 * pandas
 
-Additionally, some specific features rely on legacy software below
+Additionally, some features specific to RiPP classification rely on legacy software below
 * [Meme Suite](https://meme-suite.org/meme/)
 * [RREFinder](https://github.com/Alexamk/RREFinder)
 * [RADAR](https://github.com/AndreasHeger/radar)
