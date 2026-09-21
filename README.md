@@ -95,7 +95,7 @@ I will list the steps used for mining of RiPP gene clusters from all Acidobacter
     * More sophisticated job handlers (e.g. SLURM) obviate many of these requirements. Again, your mileage may vary.
 
 ```
-    cat acido.txt/acido_accessions.txt | parallel -j 8 --progress --joblog acido.log ./acido_submit.sh {}
+    cat ./acido/acido_data/md5sum.txt | parallel -j 8 --progress --joblog acido.log ./acido_submit.sh {}
 ```
 
 5. Perform comparative genomics analysis using HERD.
